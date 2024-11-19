@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: url("/bg.png");
+}
+
+/* Nav Bar */
+
+nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+
+#logo img {
+    margin-left: 80px;
+
+}
+
+#options {
+    height: 50px;
+    width: 28%;
+}
+
+#op {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#op li a {
+    color: white;
+    transition: 0.3s ease-out;
+}
+#op li a:hover {
+    color: #b18958;
+}
+
+#op li {
+    margin-top: 10px;
+}
+
+#signUp {
+    border: 2px solid white;
+    height: 35px;
+    display: flex;
+    margin-right: 50px;
+    width: 90px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+
+
+}
+
+
+
+#signUp a {
+    color: white;
+    margin: auto;
+    transition: 0.3s ease-out;
+
+}
+
+#signUp:hover{
+    border-color: #b18958;
+    
+    
+}
+
+
+/* Slider section */
+
+@media (min-width:860px) {
+    .btn_one {
+        display: none;
+    }
+}
+
+@media (min-width:100px) and (max-width:855px) {
+    #options {
+        display: none;
+    }
+
+    #signUp {
+        margin-right: 100px;
+    }
+}
+
+.btn_one {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    right: 17px;
+    top: 23px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3 linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    transition: all 0.3 linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+}
+
+.sidebar_menu .menu {
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .btn_two i {
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3 linear;
+}
+
+
+.sidebar_menu .menu a {
+    font-size: 17px;
+}
+
+
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one i:hover {
+    font-size: 40px;
+}
+
+.btn_two i:hover {
+    font-size: 30px;
+
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked~.sidebar_menu {
+    right: 0px;
+}
+
+#check:checked~.btn_one i {
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+
+/* main Hero Section */
+
+main {
+    height: 83vh;
+    width: 100%;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mockup img{
+    height: 440px;
+    animation: si 0.3s 1 ease-in;
+}
+
+@keyframes si {
+    from{
+    height: 470px;
+    }
+    to{
+    height: 440px;
+    }
+}
+
+#icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    left: 45px;
+    top: 40%;
+    position: absolute;
+    z-index: 2;
+}
+#op li a:hover {
+    color: #b18958;
+}
+
+
+#now{
+    display: flex;
+    margin-top: 20px;
+}
+
+.social i{
+    margin-top: 45px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s ease-out;
+
+}
+.fa-brands:hover{
+    from{
+        color: white;
+        margin-top: 45px;
+
+    }
+    to{
+        color: #b18958;
+        margin-top: 50px;
+
+    }
+}
+
+.heading{
+    color: white;
+    left: 170px;
+    top: 300px;
+    position: absolute;
+    z-index: 2;
+}
+.mockup{
+    top: 130px;
+    right: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.heading h1{
+    font-size: 70px;
+}
+
+.heading p{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100px;
+    background-color: #b18958;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: none;
+}
+
+button a{
+    color: white;
+    font-size: 14px;
+}
+
+#now h2 {
+    margin-right: 10px;
+}
